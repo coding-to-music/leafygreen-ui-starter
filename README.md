@@ -1,7 +1,12 @@
 # leafygreen-ui-starter-kit
 
+App:
+https://leafygreen-ui-starter.vercel.app/
+
+Dashboard:
 https://vercel.com/coding-to-music/leafygreen-ui-starter
 
+Repo:
 https://github.com/coding-to-music/leafygreen-ui-starter
 
 https://github.com/mongodb-js/leafygreen-ui-starter-kit
