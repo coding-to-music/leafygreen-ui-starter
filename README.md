@@ -1,5 +1,11 @@
 # leafygreen-ui-starter-kit
 
+https://vercel.com/coding-to-music/leafygreen-ui-starter
+
+https://github.com/coding-to-music/leafygreen-ui-starter
+
+https://github.com/mongodb-js/leafygreen-ui-starter-kit
+
 A (slightly) opinionated starter kit for making applications with [@leafygreen-ui](https://github.com/mongodb/leafygreen-ui).
 
 What this has built-in:
@@ -57,15 +63,46 @@ serve -s build
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```java
+vercel
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Output:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```java
+Vercel CLI 23.1.2
+? Set up and deploy “/mnt/volume_nyc1_01/leafygreen-ui-starter”? [Y/n] y
+? Which scope do you want to deploy to? Tom Connors
+? Link to existing project? [y/N] n
+? What’s your project’s name? leafygreen-ui-starter
+? In which directory is your code located? ./
+Auto-detected Project Settings (Create React App):
+- Build Command: react-scripts build
+- Output Directory: build
+- Development Command: react-scripts start
+? Want to override the settings? [y/N] n
+🔗  Linked to coding-to-music/leafygreen-ui-starter (created .vercel and added it to .gitignore)
+🔍  Inspect: https://vercel.com/coding-to-music/leafygreen-ui-starter/67X4FvQEne2c7swtG9hj6gHomKSH [1s]
+✅  Production: https://leafygreen-ui-starter.vercel.app [46s]
+📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+💡  To change the domain or build command, go to https://vercel.com/coding-to-music/leafygreen-ui-starter/settings
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Deploying to Vercel production:
+
+```java
+vercel --prod
+```
+
+Output:
+
+```java
+Vercel CLI 23.1.2
+🔍  Inspect: https://vercel.com/coding-to-music/leafygreen-ui-starter/HCFxGWC3Yb2AbvvRcNAMxYRR4Y3u [996ms]
+✅  Production: https://leafygreen-ui-starter.vercel.app [26s]
+```
 
 ## Learn More
 
