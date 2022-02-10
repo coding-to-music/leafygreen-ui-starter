@@ -1,14 +1,24 @@
 /** @jsx jsx */
-import { jsx, css, Global } from '@emotion/core'
-import styled from '@emotion/styled/macro';
-import { uiColors } from '@leafygreen-ui/palette'
-import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
+import { jsx, css, Global } from "@emotion/core";
+import styled from "@emotion/styled/macro";
+import { uiColors } from "@leafygreen-ui/palette";
+import Icon from "@leafygreen-ui/icon";
+import { SideNav, SideNavGroup, SideNavItem } from "@leafygreen-ui/side-nav";
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Switch,
+} from "react-router-dom";
 
-import HomePage from './components/HomePage';
-import AboutPage from './components/AboutPage';
+// import SideNav from "./components/SideNav";
+import HomePage from "./components/HomePage";
+import AboutPage from "./components/AboutPage";
 
 const globalStyles = css`
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: inherit;
   }
 
@@ -81,7 +91,9 @@ const navigationLinkStyles = css`
   }
 `;
 
-const NavigationLink = (props) => <NavLink {...props} css={navigationLinkStyles} />;
+const NavigationLink = (props) => (
+  <NavLink {...props} css={navigationLinkStyles} />
+);
 
 function App() {
   return (
@@ -96,17 +108,53 @@ function App() {
             <Navigation>
               <List>
                 <ListItem>
-                  <NavigationLink exact to="/">Home</NavigationLink>
+                  <NavigationLink exact to="/">
+                    Home
+                  </NavigationLink>
                 </ListItem>
                 <ListItem>
-                  <NavigationLink exact to="/about">About</NavigationLink>
+                  <NavigationLink exact to="/about">
+                    About
+                  </NavigationLink>
                 </ListItem>
               </List>
             </Navigation>
           </Container>
+          {/* <>
+            <Container>
+              <SideNav widthOverride={300}>
+                <SideNavItem>Overview</SideNavItem>
+                <SideNavItem>Introduction</SideNavItem>
+                <SideNavItem>
+                  Android SDK
+                  <SideNavItem>Install MongoDB Community Edition</SideNavItem>
+                  <SideNavGroup
+                    header="Fundamentals"
+                    collapsible
+                    glyph={<Icon glyph="Building" />}
+                  >
+                    <SideNavItem active>
+                      Upgrade MongoDB Community to MongoDB Enterprise
+                    </SideNavItem>
+                    <SideNavItem>
+                      Verify Integrity of MongoDB Packages
+                    </SideNavItem>
+                    <SideNavGroup header="Preferences">
+                      <SideNavItem>Privacy</SideNavItem>
+                      <SideNavItem>Security</SideNavItem>
+                    </SideNavGroup>
+                  </SideNavGroup>
+                </SideNavItem>
+              </SideNav>
+            </Container>
+          </> */}
         </Header>
 
-        <Container css={css`margin-top: 48px;`}>
+        <Container
+          css={css`
+            margin-top: 48px;
+          `}
+        >
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
