@@ -6,6 +6,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^10.0.11",
+    "@heroicons/react": "^1.0.5",
     "@leafygreen-ui/badge": "^1.0.6",
     "@leafygreen-ui/button": "^2.2.6",
     "@leafygreen-ui/checkbox": "^3.0.2",
@@ -18,11 +19,13 @@
     "@leafygreen-ui/side-nav": "^7.2.1",
     "@leafygreen-ui/theme": "^1.1.7",
     "@leafygreen-ui/toggle": "^2.0.4",
+    "next": "^12.0.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "react-transition-group": "^4.4.2"
+    "react-transition-group": "^4.4.2",
+    "realm-web": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

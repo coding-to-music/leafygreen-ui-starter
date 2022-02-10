@@ -1,4 +1,8 @@
 /** @jsx jsx */
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import { jsx, css, Global } from "@emotion/core";
 import styled from "@emotion/styled/macro";
 import { uiColors } from "@leafygreen-ui/palette";
@@ -41,11 +45,11 @@ const globalStyles = css`
   }
 `;
 
-const Header = styled.header`
-  background-color: ${uiColors.white};
-  border-bottom: 1px solid ${uiColors.gray.light2};
-  overflow: hidden;
-`;
+// const Header = styled.header`
+//   background-color: ${uiColors.white};
+//   border-bottom: 1px solid ${uiColors.gray.light2};
+//   overflow: hidden;
+// `;
 
 const Title = styled.h1`
   font-weight: bold;
@@ -68,13 +72,13 @@ const Navigation = styled.nav`
   margin-top: 36px;
 `;
 
-const Container = styled.section`
-  width: 100%;
-  max-width: 850px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: auto;
-`;
+// const Container = styled.section`
+//   width: 100%;
+//   max-width: 850px;
+//   padding-left: 12px;
+//   padding-right: 12px;
+//   margin: auto;
+// `;
 
 const navigationLinkStyles = css`
   transition: color 0.5s ease-out;
@@ -100,7 +104,6 @@ function App() {
     <Router>
       <div className="App">
         <Global styles={globalStyles} />
-
         <Header>
           <Container>
             <Title>@leafygreen-ui starter-kit!</Title>
@@ -149,8 +152,7 @@ function App() {
             </Container>
           </> */}
         </Header>
-
-        <Container
+        {/* <Container
           css={css`
             margin-top: 48px;
           `}
@@ -159,7 +161,8 @@ function App() {
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
           </Switch>
-        </Container>
+        </Container> */}
+        <Footer />{" "}
       </div>
     </Router>
   );
