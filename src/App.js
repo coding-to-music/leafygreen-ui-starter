@@ -102,70 +102,78 @@ const NavigationLink = (props) => (
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Global styles={globalStyles} />
-        <Header>
-          <Container>
-            <Title>@leafygreen-ui starter-kit!</Title>
-
-            <Navigation>
-              <List>
-                <ListItem>
-                  <NavigationLink exact to="/">
-                    Home
-                  </NavigationLink>
-                </ListItem>
-                <ListItem>
-                  <NavigationLink exact to="/about">
-                    About
-                  </NavigationLink>
-                </ListItem>
-              </List>
-            </Navigation>
-          </Container>
-          {/* <>
-            <Container>
-              <SideNav widthOverride={300}>
-                <SideNavItem>Overview</SideNavItem>
-                <SideNavItem>Introduction</SideNavItem>
-                <SideNavItem>
-                  Android SDK
-                  <SideNavItem>Install MongoDB Community Edition</SideNavItem>
-                  <SideNavGroup
-                    header="Fundamentals"
-                    collapsible
-                    glyph={<Icon glyph="Building" />}
-                  >
-                    <SideNavItem active>
-                      Upgrade MongoDB Community to MongoDB Enterprise
-                    </SideNavItem>
-                    <SideNavItem>
-                      Verify Integrity of MongoDB Packages
-                    </SideNavItem>
-                    <SideNavGroup header="Preferences">
-                      <SideNavItem>Privacy</SideNavItem>
-                      <SideNavItem>Security</SideNavItem>
-                    </SideNavGroup>
-                  </SideNavGroup>
-                </SideNavItem>
-              </SideNav>
-            </Container>
-          </> */}
-        </Header>
-        {/* <Container
-          css={css`
-            margin-top: 48px;
-          `}
-        >
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/about" component={AboutPage} />
-          </Switch>
-        </Container> */}
-        <Footer />{" "}
-      </div>
+      <div className="App"></div>
+      <Footer />{" "}
     </Router>
   );
+
+  // function App() {
+  //   return (
+  //     <Router>
+  //       <div className="App">
+  //         <Global styles={globalStyles} />
+  //         <Header>
+  // {/* <Container>
+  //   <Title>@leafygreen-ui starter-kit!</Title>
+
+  //   <Navigation>
+  //     <List>
+  //       <ListItem>
+  //         <NavigationLink exact to="/">
+  //           Home
+  //         </NavigationLink>
+  //       </ListItem>
+  //       <ListItem>
+  //         <NavigationLink exact to="/about">
+  //           About
+  //         </NavigationLink>
+  //       </ListItem>
+  //     </List>
+  //   </Navigation>
+  // </Container> */}
+  //       </Header>
+  //       <>
+  //         <Container>
+  //           <SideNav widthOverride={300}>
+  //             <SideNavItem>Overview</SideNavItem>
+  //             <SideNavItem>Introduction</SideNavItem>
+  //             <SideNavItem>
+  //               Android SDK
+  //               <SideNavItem>Install MongoDB Community Edition</SideNavItem>
+  //               <SideNavGroup
+  //                 header="Fundamentals"
+  //                 collapsible
+  //                 glyph={<Icon glyph="Building" />}
+  //               >
+  //                 <SideNavItem active>
+  //                   Upgrade MongoDB Community to MongoDB Enterprise
+  //                 </SideNavItem>
+  //                 <SideNavItem>
+  //                   Verify Integrity of MongoDB Packages
+  //                 </SideNavItem>
+  //                 <SideNavGroup header="Preferences">
+  //                   <SideNavItem>Privacy</SideNavItem>
+  //                   <SideNavItem>Security</SideNavItem>
+  //                 </SideNavGroup>
+  //               </SideNavGroup>
+  //             </SideNavItem>
+  //           </SideNav>
+  //         </Container>
+  //       {/* </>
+  //       <Container
+  //         css={css`
+  //           margin-top: 48px;
+  //         `}
+  //       >
+  //         <Switch>
+  //           <Route exact path="/" component={HomePage} />
+  //           <Route path="/about" component={AboutPage} />
+  //         </Switch>
+  //       </Container> */}
+  //     </div>
+  //     <Footer />{" "}
+  //   </Router>
+  // );
 }
 
 export default App;
