@@ -18,7 +18,7 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Link href="/">
               <div className="w-full text-green-500 text-2xl font-semibold cursor-pointer">
-                MongoStore
+                LeafyGreenMongoStore
               </div>
             </Link>
             <div className="flex items-center justify-end w-full">
