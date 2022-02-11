@@ -102,6 +102,8 @@ const NavigationLink = (props) => (
 function App() {
   return (
     <Router>
+      <Global styles={globalStyles} />
+      <Header></Header>
       <div className="App"></div>
       <Footer />{" "}
     </Router>
